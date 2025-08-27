@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏰ Timestamp Microservice</title>
+    <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1 class="title">Timestamp Microservice</h1>
+            <p class="subtitle">Convert dates and timestamps</p>
+        </header>
+
+        <div class="divider"></div>
+
+        <main class="content">
+            <div class="examples-main-section">
+                <section class="usage-section">
+                    <h2 class="section-title">
+                        Example Usage
+                    </h2>
+                    <div class="examples-column">
+                        <div class="example-card">
+                            <div class="example-type">Date String</div>
+                            <a href="api/2015-12-25" class="example-link">
+                                <code>/api/2015-12-25</code>
+                            </a>
+                        </div>
+                        <div class="example-card">
+                            <div class="example-type">Unix Timestamp</div>
+                            <a href="api/1451001600000" class="example-link">
+                                <code>/api/1451001600000</code>
+                            </a>
+                        </div>
+                        <div class="example-card">
+                            <div class="example-type">Current Time</div>
+                            <a href="api/" class="example-link">
+                                <code>/api/</code>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="output-section">
+                    <h2 class="section-title">
+                        Example Output
+                    </h2>
+                    <div class="output-container">
+                        <div class="json-output">
+                            <span class="json-brace">{</span>
+                            <div class="json-property">
+                                <span class="json-key">"unix"</span><span class="json-colon">:</span><span class="json-value json-number">1451001600000</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"utc"</span><span class="json-colon">:</span><span class="json-value json-string">"Fri, 25 Dec 2015 00:00:00 GMT"</span>
+                            </div>
+                            <span class="json-brace">}</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p> 
+                <a href="https://www.freecodecamp.org/" class="footer-link">freeCodeCamp.org</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
